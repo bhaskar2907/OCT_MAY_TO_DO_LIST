@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: #e0e0e0;
+}
+
+#new-task {
+    width: calc(100% - 52px);
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #616161;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #757575;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+li .task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+li.checked .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    margin-left: 5px;
+    background: #b71c1c;
+}
+
+li button:hover {
+    background: #d32f2f;
+}
+
+li .edit-button {
+    background: #ffeb3b;
+    color: #000;
+}
+
+li .edit-button:hover {
+    background: #fbc02d;
+}
+
+.checkbox {
+    cursor: pointer;
+}
